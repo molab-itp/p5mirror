@@ -40,6 +40,10 @@ sh downloads/gen/download.sh
 
 sh downloads/gen/unzip.sh
 
+# run shell script to build p5projects-index.md
+
+bin/build-p5projects-index.sh
+
 ```
 
 ## Generated files
