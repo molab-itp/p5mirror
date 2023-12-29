@@ -14,6 +14,9 @@ sh downloads/gen/unzip.sh
 # limit to the 2 most recent projects
 bin/build.sh --user jhtitp --limit 2
 
+# run build p5projects-index.md shell script
+bin/build-p5projects-index.sh 
+
 # --
 
 # manually unzip selected projects from downloads/zips

@@ -42,7 +42,8 @@ sh downloads/gen/unzip.sh
 
 # run build p5projects-index.md shell script
 
-bin/build-p5projects-index.sh
+../p5mirror/bin/build-p5projects-index.sh --user p5user --downloads ../p5mirror-p5user/downloads
+
 
 ```
 

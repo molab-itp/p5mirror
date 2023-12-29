@@ -3,7 +3,7 @@ const path = require('path');
 
 function init(my) {
   my.user_name = user_name = process.env.USER_NAME || 'jhtitp';
-  my.downloads = 'downloads';
+  // my.downloads = 'downloads';
   my.limit = -1;
 
   for (let index = 0; index < process.argv.length; index++) {
@@ -22,6 +22,9 @@ function init(my) {
       my.limit = parseFloat(process.argv[index]);
       console.log('argv limit', my.limit);
     }
+  }
+  if (!my.downloads) {
+    my.downloads = '../p5mirror-${my.user_name}/downloads';
   }
 
   my.root_path = path.join(__dirname, '..', my.downloads);
