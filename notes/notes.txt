@@ -19,7 +19,7 @@ bin/build.sh --user jhtitp --limit 2
 # manually unzip selected projects from downloads/zips
 # place in in p5projects
 
-# list unneeded p5 js files
+# list redundant p5 js files
 
 ls -l p5projects/*/p5.*
 

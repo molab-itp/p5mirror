@@ -6,6 +6,7 @@ plan.txt
 
 [] build readme.md index for p5projects
   build-p5projects-index
+  build_p5projects_index
   enumerate files in p5projects
   p5projects-index.md
 

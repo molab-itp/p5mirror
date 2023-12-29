@@ -44,6 +44,8 @@ sh downloads/gen/unzip.sh
 
 ## Generated files
 
+- [p5projects-index](./p5projects-index.md)
+
 ### Listings
 
 - [downloads/gen/sketches_recent.md](./downloads/gen/sketches_recent.md)

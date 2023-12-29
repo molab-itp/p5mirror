@@ -2,40 +2,16 @@ const fs = require('fs-extra');
 const path = require('path');
 const axios = require('axios');
 
-const build_collection_list = require('./build_collection_list');
+const collection_list = require('./collection_list');
+const parse_argv = require('./parse_argv');
 
 let my = {};
-my.user_name = user_name = process.env.USER_NAME || 'jhtitp';
-my.downloads = 'downloads';
-my.limit = -1;
-
-for (let index = 0; index < process.argv.length; index++) {
-  // console.log(index, process.argv[index]);
-  let val = process.argv[index];
-  if (val == '--user') {
-    index++;
-    my.user_name = process.argv[index];
-    console.log('argv user_name', my.user_name);
-  } else if (val == '--downloads') {
-    index++;
-    my.downloads = process.argv[index];
-    console.log('argv downloads', my.downloads);
-  } else if (val == '--limit') {
-    index++;
-    my.limit = parseFloat(process.argv[index]);
-    console.log('argv limit', my.limit);
-  }
-}
+parse_argv.init(my);
 
 function init() {
-  my.root_path = path.join(__dirname, '..', my.downloads);
-  console.log('');
-  console.log('my.root_path', my.root_path);
-
   my.gen_path = path.join(my.root_path, 'gen');
   my.zips_path = path.join(my.root_path, 'zips');
   my.json_path = path.join(my.root_path, 'json');
-  my.p5projects_path = path.join(my.root_path, '../p5projects');
 
   fs.ensureDirSync(my.gen_path);
   fs.ensureDirSync(my.zips_path);
@@ -55,13 +31,11 @@ function init() {
   my.href_read = 1;
 }
 
-// let sks;
-
 async function run() {
   //
   init();
 
-  await build_collection_list.run(my);
+  await collection_list.run(my);
 
   if (!fs.pathExistsSync(my.sketch_json_path) || my.href_read) {
     await read_href(my.sketch_href, my.sketch_json_path);

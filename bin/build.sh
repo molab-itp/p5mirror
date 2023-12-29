@@ -10,7 +10,5 @@ if [ ! -e "$dest/node_modules" ]; then
   popd > /dev/null
 fi
 
-node ../node/build_sketch_list.js "$@"
-
-# node ../node/acollection_list.js "$@"
+node ../node/build.js "$@"
 
