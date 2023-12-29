@@ -1,5 +1,9 @@
 plan.txt
 
+https://github.com/jht1493/p5mirror-jht1493
+https://github.com/jht9629-gmail/p5mirror-jht9629-gmail
+https://github.com/jht9629-nyu/p5mirror-jht9629-nyu
+
 # -- 
 
 [] setup github pages for p5projects
@@ -10,3 +14,4 @@ plan.txt
   enumerate files in p5projects
   p5projects-index.md
 
+# --

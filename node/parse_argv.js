@@ -24,7 +24,7 @@ function init(my) {
     }
   }
   if (!my.downloads) {
-    my.downloads = '../p5mirror-${my.user_name}/downloads';
+    my.downloads = `../p5mirror-${my.user_name}/downloads`;
   }
 
   my.root_path = path.join(__dirname, '..', my.downloads);

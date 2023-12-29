@@ -29,10 +29,12 @@ function run() {
   // console.log('dfiles', dfiles);
   console.log('dfiles n', dfiles.length);
   let lines = [];
+  lines.push(`# ${my.user_name} p5projects`);
+  lines.push('');
   for (let afile of dfiles) {
     // console.log('afile', afile);
     let efile = encodeURIComponent(afile);
-    lines.push(`[${afile}](./p5projects/${efile}/index.html)`);
+    lines.push(`- [${afile}](./p5projects/${efile}/index.html)`);
   }
   console.log('');
 

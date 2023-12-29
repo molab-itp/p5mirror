@@ -15,7 +15,7 @@ sh downloads/gen/unzip.sh
 bin/build.sh --user jhtitp --limit 2
 
 # run build p5projects-index.md shell script
-bin/build-p5projects-index.sh 
+bin/build-p5projects-index.sh --downloads downloads
 
 # --
 
