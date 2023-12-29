@@ -1,0 +1,341 @@
+[
+  {
+    "name": "background 0",
+    "_id": "NAReIkM1c",
+    "updatedAt": "2023-08-19T13:56:34.426Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "64165ca48b33bf438f656399",
+          "64165ca48b33bf438f656398",
+          "64165ca48b33bf438f65639a"
+        ],
+        "fileType": "folder",
+        "_id": "64165ca48b33bf438f65639b",
+        "createdAt": "2023-08-19T13:56:34.426Z",
+        "updatedAt": "2023-08-19T13:56:34.426Z",
+        "id": "64165ca48b33bf438f65639b"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jhtitp/sketches/NAReIkM1c\n// background 0\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight);\n}\n\nfunction draw() {\n  background(0);\n}\n\nfunction mousePressed() {\n  ui_toggleFullScreen()\n}\n\nfunction ui_toggleFullScreen() {\n  if (!document.documentElement.requestFullscreen) {\n    console.log('NO document.documentElement.requestFullscreen');\n    return;\n  }\n  if (!document.fullscreenElement) {\n    document.documentElement.requestFullscreen();\n  } else {\n    if (document.exitFullscreen) {\n      document.exitFullscreen();\n    }\n  }\n}\n\n// https://p5js.org/reference/#/p5/fullscreen\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "64165ca48b33bf438f656398",
+        "isSelectedFile": true,
+        "createdAt": "2023-08-19T13:56:34.426Z",
+        "updatedAt": "2023-08-19T13:56:34.426Z",
+        "id": "64165ca48b33bf438f656398"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "64165ca48b33bf438f656399",
+        "createdAt": "2023-08-19T13:56:34.426Z",
+        "updatedAt": "2023-08-19T13:56:34.426Z",
+        "id": "64165ca48b33bf438f656399"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "64165ca48b33bf438f65639a",
+        "createdAt": "2023-08-19T13:56:34.426Z",
+        "updatedAt": "2023-08-19T13:56:34.426Z",
+        "id": "64165ca48b33bf438f65639a"
+      }
+    ],
+    "createdAt": "2023-03-19T00:52:56.813Z",
+    "id": "NAReIkM1c"
+  },
+  {
+    "name": "duplicate",
+    "_id": "TdzEIUUD5",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "658e45987d8cf084ef8f39e5",
+          "658e45987d8cf084ef8f39e6",
+          "658e45987d8cf084ef8f39e7"
+        ],
+        "fileType": "folder",
+        "_id": "658e45987d8cf084ef8f39e4",
+        "createdAt": "2023-12-29T04:05:50.796Z",
+        "updatedAt": "2023-12-29T04:05:50.796Z",
+        "id": "658e45987d8cf084ef8f39e4"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  createCanvas(400, 400);\n}\n\nfunction draw() {\n  background(220);\n}",
+        "children": [],
+        "fileType": "file",
+        "_id": "658e45987d8cf084ef8f39e6",
+        "isSelectedFile": true,
+        "createdAt": "2023-12-29T04:05:50.796Z",
+        "updatedAt": "2023-12-29T04:05:50.796Z",
+        "id": "658e45987d8cf084ef8f39e6"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "658e45987d8cf084ef8f39e5",
+        "createdAt": "2023-12-29T04:05:50.796Z",
+        "updatedAt": "2023-12-29T04:05:50.796Z",
+        "id": "658e45987d8cf084ef8f39e5"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "658e45987d8cf084ef8f39e7",
+        "createdAt": "2023-12-29T04:05:50.796Z",
+        "updatedAt": "2023-12-29T04:05:50.796Z",
+        "id": "658e45987d8cf084ef8f39e7"
+      }
+    ],
+    "createdAt": "2023-12-29T04:05:45.035Z",
+    "updatedAt": "2023-12-29T04:05:50.796Z",
+    "id": "TdzEIUUD5"
+  },
+  {
+    "name": "duplicate",
+    "_id": "kWtHbrdjf",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "658e45907d8cf084ef8f39e1",
+          "658e45907d8cf084ef8f39e2",
+          "658e45907d8cf084ef8f39e3"
+        ],
+        "fileType": "folder",
+        "_id": "658e45907d8cf084ef8f39e0",
+        "createdAt": "2023-12-29T04:05:43.114Z",
+        "updatedAt": "2023-12-29T04:05:43.114Z",
+        "id": "658e45907d8cf084ef8f39e0"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  createCanvas(400, 400);\n}\n\nfunction draw() {\n  background(220);\n}",
+        "children": [],
+        "fileType": "file",
+        "_id": "658e45907d8cf084ef8f39e2",
+        "isSelectedFile": true,
+        "createdAt": "2023-12-29T04:05:43.114Z",
+        "updatedAt": "2023-12-29T04:05:43.114Z",
+        "id": "658e45907d8cf084ef8f39e2"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "658e45907d8cf084ef8f39e1",
+        "createdAt": "2023-12-29T04:05:43.114Z",
+        "updatedAt": "2023-12-29T04:05:43.114Z",
+        "id": "658e45907d8cf084ef8f39e1"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "658e45907d8cf084ef8f39e3",
+        "createdAt": "2023-12-29T04:05:43.114Z",
+        "updatedAt": "2023-12-29T04:05:43.114Z",
+        "id": "658e45907d8cf084ef8f39e3"
+      }
+    ],
+    "createdAt": "2023-12-29T04:05:36.550Z",
+    "updatedAt": "2023-12-29T04:05:43.114Z",
+    "id": "kWtHbrdjf"
+  },
+  {
+    "name": "duplicate",
+    "_id": "sWg2t6XPW",
+    "updatedAt": "2023-12-29T04:05:33.567Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "658e45797d8cf084ef8f39dd",
+          "658e45797d8cf084ef8f39dc",
+          "658e45797d8cf084ef8f39de"
+        ],
+        "fileType": "folder",
+        "_id": "658e45797d8cf084ef8f39df",
+        "createdAt": "2023-12-29T04:05:33.567Z",
+        "updatedAt": "2023-12-29T04:05:33.567Z",
+        "id": "658e45797d8cf084ef8f39df"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  createCanvas(400, 400);\n}\n\nfunction draw() {\n  background(220);\n}",
+        "children": [],
+        "fileType": "file",
+        "_id": "658e45797d8cf084ef8f39dc",
+        "isSelectedFile": true,
+        "createdAt": "2023-12-29T04:05:33.567Z",
+        "updatedAt": "2023-12-29T04:05:33.567Z",
+        "id": "658e45797d8cf084ef8f39dc"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "658e45797d8cf084ef8f39dd",
+        "createdAt": "2023-12-29T04:05:33.567Z",
+        "updatedAt": "2023-12-29T04:05:33.567Z",
+        "id": "658e45797d8cf084ef8f39dd"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "658e45797d8cf084ef8f39de",
+        "createdAt": "2023-12-29T04:05:33.567Z",
+        "updatedAt": "2023-12-29T04:05:33.567Z",
+        "id": "658e45797d8cf084ef8f39de"
+      }
+    ],
+    "createdAt": "2023-12-29T04:05:33.567Z",
+    "id": "sWg2t6XPW"
+  },
+  {
+    "name": "FuncyChars !@#$%^&*()_-+={[}]|\\:;\"'<,>.?/",
+    "_id": "8fkJQUg8Y",
+    "updatedAt": "2023-12-29T03:05:08.625Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "658df3e83dc2dd03eb1e1d1d",
+          "658df3e83dc2dd03eb1e1d1c",
+          "658df3e83dc2dd03eb1e1d1e"
+        ],
+        "fileType": "folder",
+        "_id": "658df3e83dc2dd03eb1e1d1f",
+        "createdAt": "2023-12-29T03:05:08.625Z",
+        "updatedAt": "2023-12-29T03:05:08.625Z",
+        "id": "658df3e83dc2dd03eb1e1d1f"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  createCanvas(400, 400);\n}\n\nfunction draw() {\n  background(220);\n}",
+        "children": [],
+        "fileType": "file",
+        "_id": "658df3e83dc2dd03eb1e1d1c",
+        "isSelectedFile": true,
+        "createdAt": "2023-12-29T03:05:08.625Z",
+        "updatedAt": "2023-12-29T03:05:08.625Z",
+        "id": "658df3e83dc2dd03eb1e1d1c"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "658df3e83dc2dd03eb1e1d1d",
+        "createdAt": "2023-12-29T03:05:08.625Z",
+        "updatedAt": "2023-12-29T03:05:08.625Z",
+        "id": "658df3e83dc2dd03eb1e1d1d"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "658df3e83dc2dd03eb1e1d1e",
+        "createdAt": "2023-12-29T03:05:08.625Z",
+        "updatedAt": "2023-12-29T03:05:08.625Z",
+        "id": "658df3e83dc2dd03eb1e1d1e"
+      }
+    ],
+    "createdAt": "2023-12-28T22:17:16.418Z",
+    "id": "8fkJQUg8Y"
+  },
+  {
+    "name": "image  array sin copy",
+    "_id": "3K6pk1kI6",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "658e03d7d5903b3ab71dda26",
+          "658e04acc12300001a689176",
+          "658e03d7d5903b3ab71dda28",
+          "658e03d7d5903b3ab71dda29"
+        ],
+        "fileType": "folder",
+        "_id": "658e03d7d5903b3ab71dda25",
+        "createdAt": "2023-12-28T23:30:12.432Z",
+        "updatedAt": "2023-12-28T23:30:12.432Z",
+        "isSelectedFile": false,
+        "id": "658e03d7d5903b3ab71dda25"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jhtitp/sketches/3K6pk1kI6\n// image  array sin copy\n\nlet img;\nlet imgs = [];\nlet n = 10;\n\nlet sw = {};\n\nfunction preload() {\n  img = loadImage(\"jht-w128.png\");\n}\n\nfunction setup() {\n  createCanvas(400, 400);\n\n  let w = img.width;\n  let h = img.height;\n  console.log(\"w\", w, \"h\", h);\n\n  let s = int(h / n);\n\n  for (let i = 0; i < n; i++) {\n    imgs[i] = createImage(w, s);\n    imgs[i].copy(img, 0, s * i, w, s, 0, 0, w, s);\n  }\n\n  init_sw();\n}\n\nfunction draw() {\n  background(220);\n\n  let mw = width / 2 - img.width / 2;\n  image(img, mw, 0);\n\n  let w = img.width;\n  let h = img.height;\n\n  // let s = int(h / n) * 2;\n  let s = int(h / n);\n\n  sw.theta += 0.02;\n  sw.a = sw.theta;\n\n  for (let i = 0; i < n; i++) {\n    let val = sin(sw.a) * sw.amplitude;\n\n    image(imgs[i], mw + val, s * i);\n\n    sw.a += sw.da;\n  }\n}\n\nfunction init_sw() {\n  sw.xspacing = 16; // Distance between each horizontal location\n  sw.theta = 0.0; // Start angle at 0\n  sw.amplitude = width / 16; // Height of wave\n  sw.period = 500.0; // How many pixels before the wave repeats\n\n  let w = height + 16;\n  sw.da = (TWO_PI / sw.period) * sw.xspacing;\n  sw.numa = floor(w / sw.xspacing);\n}\n\nfunction draw_sine_wave() {\n  sw.theta += 0.02;\n  sw.a = sw.theta;\n  for (let i = 0; i < sw.numa; i++) {\n    //\n    let val = sin(sw.a) * sw.amplitude;\n\n    let y = i * sw.xspacing;\n    let x = width / 2 + val;\n\n    ellipse(x, y, 16, 16);\n\n    sw.a += sw.da;\n  }\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/0OHUgo_c6\n// image array sin\n\n// https://editor.p5js.org/jht9629-nyu/sketches/P-AHc4NF9\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "658e03d7d5903b3ab71dda28",
+        "isSelectedFile": true,
+        "createdAt": "2023-12-28T23:30:12.432Z",
+        "updatedAt": "2023-12-28T23:30:12.432Z",
+        "id": "658e03d7d5903b3ab71dda28"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "658e03d7d5903b3ab71dda26",
+        "createdAt": "2023-12-28T23:30:12.432Z",
+        "updatedAt": "2023-12-28T23:30:12.432Z",
+        "isSelectedFile": false,
+        "id": "658e03d7d5903b3ab71dda26"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "658e03d7d5903b3ab71dda29",
+        "createdAt": "2023-12-28T23:30:12.432Z",
+        "updatedAt": "2023-12-28T23:30:12.432Z",
+        "isSelectedFile": false,
+        "id": "658e03d7d5903b3ab71dda29"
+      },
+      {
+        "name": "jht-w128.png",
+        "content": "",
+        "children": [],
+        "fileType": "file",
+        "_id": "658e04acc12300001a689176",
+        "url": "https://assets.editor.p5js.org/64165ccec9dda1001a8b6295/0caf6dba-faf9-4187-859b-a14a5b347798.png",
+        "updatedAt": "2023-12-28T23:30:12.432Z",
+        "createdAt": "2023-12-28T23:30:12.432Z",
+        "id": "658e04acc12300001a689176"
+      }
+    ],
+    "createdAt": "2023-12-28T23:25:12.373Z",
+    "updatedAt": "2023-12-28T23:30:12.432Z",
+    "id": "3K6pk1kI6"
+  }
+]

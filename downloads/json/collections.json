@@ -1,0 +1,38 @@
+[
+  {
+    "name": "My road collection",
+    "_id": "BbYgr9US_",
+    "owner": {
+      "_id": "64165ccec9dda1001a8b6295",
+      "username": "jhtitp",
+      "id": "64165ccec9dda1001a8b6295"
+    },
+    "description": "",
+    "slug": "My_road_collection",
+    "items": [
+      {
+        "_id": "658df3da497403001aaad590",
+        "project": {
+          "name": "background 0",
+          "_id": "NAReIkM1c",
+          "user": {
+            "_id": "64165ccec9dda1001a8b6295",
+            "username": "jhtitp",
+            "id": "64165ccec9dda1001a8b6295"
+          },
+          "slug": "Crystalline_atrociraptor",
+          "id": "NAReIkM1c"
+        },
+        "createdAt": "2023-12-28T22:16:58.767Z",
+        "updatedAt": "2023-12-28T22:16:58.767Z",
+        "id": "658df3da497403001aaad590",
+        "projectId": "NAReIkM1c",
+        "isDeleted": false
+      }
+    ],
+    "createdAt": "2023-12-28T22:16:54.518Z",
+    "updatedAt": "2023-12-28T22:16:58.767Z",
+    "__v": 1,
+    "id": "BbYgr9US_"
+  }
+]
