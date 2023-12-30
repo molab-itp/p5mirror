@@ -71,3 +71,7 @@ sh downloads/gen/unzip.sh
 # github pages
 
 [https://molab-itp.github.io/p5mirror/](https://molab-itp.github.io/p5mirror/)
+
+# search p5mirror on github
+
+[https://github.com/search?q=p5mirror&type=repositories](https://github.com/search?q=p5mirror&type=repositories)
