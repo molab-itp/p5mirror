@@ -77,8 +77,8 @@ function list_sketches(sks, list_path) {
     let id = item.id;
     let updatedAt = item.updatedAt;
     let mname = markDownQuote(name);
-    let mid = markDownQuote(id);
-    lines.push(`[${mname}](https://editor.p5js.org/${my.user_name}/sketches/${mid})<!-- ${updatedAt} -->  `);
+    // let mid = markDownQuote(id);
+    lines.push(`[${mname}](https://editor.p5js.org/${my.user_name}/sketches/${id})<!-- ${updatedAt} -->  `);
   });
   fs.writeFileSync(list_path, lines.join('\n'));
 }

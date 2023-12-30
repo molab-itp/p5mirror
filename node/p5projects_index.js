@@ -35,13 +35,13 @@ function run() {
   for (let afile of dfiles) {
     let mfile = markDownQuote(afile);
     let efile = encodeURIComponent(afile);
-    let mefile = markDownQuote(efile);
+    // let mefile = markDownQuote(efile);
     // console.log('afile', afile);
     // console.log('mfile', mfile);
     // console.log('efile', efile);
     // console.log('mefile', mefile);
     // console.log('');
-    lines.push(`- [${mfile}](./p5projects/${mefile}/index.html)`);
+    lines.push(`- [${mfile}](./p5projects/${efile}/index.html)`);
   }
   console.log('');
 
