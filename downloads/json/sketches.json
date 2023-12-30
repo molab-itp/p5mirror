@@ -2,7 +2,7 @@
   {
     "name": "background     0",
     "_id": "NAReIkM1c",
-    "updatedAt": "2023-12-30T07:01:30.575Z",
+    "updatedAt": "2023-12-30T08:34:29.628Z",
     "files": [
       {
         "name": "root",
@@ -14,8 +14,8 @@
         ],
         "fileType": "folder",
         "_id": "64165ca48b33bf438f65639b",
-        "createdAt": "2023-12-30T07:01:30.575Z",
-        "updatedAt": "2023-12-30T07:01:30.575Z",
+        "createdAt": "2023-12-30T08:34:29.628Z",
+        "updatedAt": "2023-12-30T08:34:29.628Z",
         "id": "64165ca48b33bf438f65639b"
       },
       {
@@ -25,8 +25,8 @@
         "fileType": "file",
         "_id": "64165ca48b33bf438f656398",
         "isSelectedFile": true,
-        "createdAt": "2023-12-30T07:01:30.575Z",
-        "updatedAt": "2023-12-30T07:01:30.575Z",
+        "createdAt": "2023-12-30T08:34:29.628Z",
+        "updatedAt": "2023-12-30T08:34:29.628Z",
         "id": "64165ca48b33bf438f656398"
       },
       {
@@ -35,8 +35,8 @@
         "children": [],
         "fileType": "file",
         "_id": "64165ca48b33bf438f656399",
-        "createdAt": "2023-12-30T07:01:30.575Z",
-        "updatedAt": "2023-12-30T07:01:30.575Z",
+        "createdAt": "2023-12-30T08:34:29.628Z",
+        "updatedAt": "2023-12-30T08:34:29.628Z",
         "id": "64165ca48b33bf438f656399"
       },
       {
@@ -45,8 +45,8 @@
         "children": [],
         "fileType": "file",
         "_id": "64165ca48b33bf438f65639a",
-        "createdAt": "2023-12-30T07:01:30.575Z",
-        "updatedAt": "2023-12-30T07:01:30.575Z",
+        "createdAt": "2023-12-30T08:34:29.628Z",
+        "updatedAt": "2023-12-30T08:34:29.628Z",
         "id": "64165ca48b33bf438f65639a"
       }
     ],
@@ -160,60 +160,6 @@
     "createdAt": "2023-12-29T04:05:36.550Z",
     "updatedAt": "2023-12-29T04:05:43.114Z",
     "id": "kWtHbrdjf"
-  },
-  {
-    "name": "duplicate",
-    "_id": "sWg2t6XPW",
-    "updatedAt": "2023-12-29T04:05:33.567Z",
-    "files": [
-      {
-        "name": "root",
-        "content": "",
-        "children": [
-          "658e45797d8cf084ef8f39dd",
-          "658e45797d8cf084ef8f39dc",
-          "658e45797d8cf084ef8f39de"
-        ],
-        "fileType": "folder",
-        "_id": "658e45797d8cf084ef8f39df",
-        "createdAt": "2023-12-29T04:05:33.567Z",
-        "updatedAt": "2023-12-29T04:05:33.567Z",
-        "id": "658e45797d8cf084ef8f39df"
-      },
-      {
-        "name": "sketch.js",
-        "content": "function setup() {\n  createCanvas(400, 400);\n}\n\nfunction draw() {\n  background(220);\n}",
-        "children": [],
-        "fileType": "file",
-        "_id": "658e45797d8cf084ef8f39dc",
-        "isSelectedFile": true,
-        "createdAt": "2023-12-29T04:05:33.567Z",
-        "updatedAt": "2023-12-29T04:05:33.567Z",
-        "id": "658e45797d8cf084ef8f39dc"
-      },
-      {
-        "name": "index.html",
-        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "658e45797d8cf084ef8f39dd",
-        "createdAt": "2023-12-29T04:05:33.567Z",
-        "updatedAt": "2023-12-29T04:05:33.567Z",
-        "id": "658e45797d8cf084ef8f39dd"
-      },
-      {
-        "name": "style.css",
-        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "658e45797d8cf084ef8f39de",
-        "createdAt": "2023-12-29T04:05:33.567Z",
-        "updatedAt": "2023-12-29T04:05:33.567Z",
-        "id": "658e45797d8cf084ef8f39de"
-      }
-    ],
-    "createdAt": "2023-12-29T04:05:33.567Z",
-    "id": "sWg2t6XPW"
   },
   {
     "name": "FuncyChars !@#$%^&*()_-+={[}]|\\:;\"'<,>.?/",

@@ -4,6 +4,7 @@ const axios = require('axios');
 
 const collection_list = require('./collection_list');
 const parse_argv = require('./parse_argv');
+const { markDownQuote } = require('./markDownQuote');
 
 let my = {};
 parse_argv.init(my);
@@ -61,6 +62,25 @@ async function run() {
   download_sh(sks, my.download_sh_path, my.unzip_sh_path);
 
   console.log('');
+}
+
+function list_sketches(sks, list_path) {
+  // console.log('sks', sks);
+  // console.log('sks.length', sks.length);
+  let lines = [];
+  lines.push('# Sketches for ' + my.user_name);
+  lines.push([`${sks.length} sketches  `]);
+  sks.forEach((item) => {
+    // console.log(index, 'project.name', item.project.name);
+    // console.log(index, 'projectId', item.projectId);
+    let name = item.name;
+    let id = item.id;
+    let updatedAt = item.updatedAt;
+    let mname = markDownQuote(name);
+    let mid = markDownQuote(id);
+    lines.push(`[${mname}](https://editor.p5js.org/${my.user_name}/sketches/${mid})<!-- ${updatedAt} -->  `);
+  });
+  fs.writeFileSync(list_path, lines.join('\n'));
 }
 
 function download_sh(sks, download_sh_path, unzip_sh_path) {
@@ -134,23 +154,6 @@ function fixForFileName(str) {
 // unzip "../../downloads/zips/my sketch name.zip"
 // cd ..
 //
-
-function list_sketches(sks, list_path) {
-  // console.log('sks', sks);
-  // console.log('sks.length', sks.length);
-  let lines = [];
-  lines.push('# Sketches for ' + my.user_name);
-  lines.push([`${sks.length} sketches  `]);
-  sks.forEach((item) => {
-    // console.log(index, 'project.name', item.project.name);
-    // console.log(index, 'projectId', item.projectId);
-    let name = item.name;
-    let id = item.id;
-    let updatedAt = item.updatedAt;
-    lines.push(`[${name}](https://editor.p5js.org/${my.user_name}/sketches/${id})<!-- ${updatedAt} -->  `);
-  });
-  fs.writeFileSync(list_path, lines.join('\n'));
-}
 
 async function read_href(sketch_href, json_path) {
   // console.log('');

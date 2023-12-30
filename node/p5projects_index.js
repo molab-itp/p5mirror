@@ -3,6 +3,7 @@ const fs = require('fs-extra');
 const path = require('path');
 
 const parse_argv = require('./parse_argv');
+const { markDownQuote } = require('./markDownQuote');
 
 let my = {};
 parse_argv.init(my);
@@ -32,9 +33,15 @@ function run() {
   lines.push(`# ${my.user_name} p5projects`);
   lines.push('');
   for (let afile of dfiles) {
-    // console.log('afile', afile);
+    let mfile = markDownQuote(afile);
     let efile = encodeURIComponent(afile);
-    lines.push(`- [${afile}](./p5projects/${efile}/index.html)`);
+    let mefile = markDownQuote(efile);
+    // console.log('afile', afile);
+    // console.log('mfile', mfile);
+    // console.log('efile', efile);
+    // console.log('mefile', mefile);
+    // console.log('');
+    lines.push(`- [${mfile}](./p5projects/${mefile}/index.html)`);
   }
   console.log('');
 

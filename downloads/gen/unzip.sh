@@ -22,21 +22,14 @@ cd "duplicate-kWtHbrdjf"
 unzip -q "../../downloads/zips/duplicate-kWtHbrdjf"
 cd ..
 #
-echo unzip 4 "duplicate-sWg2t6XPW"
-rm -rf "duplicate-sWg2t6XPW"
-mkdir "duplicate-sWg2t6XPW"
-cd "duplicate-sWg2t6XPW"
-unzip -q "../../downloads/zips/duplicate-sWg2t6XPW"
-cd ..
-#
-echo unzip 5 "FuncyChars !@#$%^&()_-+=[]|;',.-8fkJQUg8Y"
+echo unzip 4 "FuncyChars !@#$%^&()_-+=[]|;',.-8fkJQUg8Y"
 rm -rf "FuncyChars !@#$%^&()_-+=[]|;',.-8fkJQUg8Y"
 mkdir "FuncyChars !@#$%^&()_-+=[]|;',.-8fkJQUg8Y"
 cd "FuncyChars !@#$%^&()_-+=[]|;',.-8fkJQUg8Y"
 unzip -q "../../downloads/zips/FuncyChars !@#$%^&()_-+=[]|;',.-8fkJQUg8Y"
 cd ..
 #
-echo unzip 6 "image array sin copy-3K6pk1kI6"
+echo unzip 5 "image array sin copy-3K6pk1kI6"
 rm -rf "image array sin copy-3K6pk1kI6"
 mkdir "image array sin copy-3K6pk1kI6"
 cd "image array sin copy-3K6pk1kI6"
