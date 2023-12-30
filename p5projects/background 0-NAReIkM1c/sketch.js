@@ -1,5 +1,5 @@
 // https://editor.p5js.org/jhtitp/sketches/NAReIkM1c
-// background 0
+// background  0
 
 function setup() {
   createCanvas(windowWidth, windowHeight);

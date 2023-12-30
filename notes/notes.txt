@@ -4,7 +4,7 @@ notes.txt
 # --
 2023-12-28 14:40:24
 
-bin/build.sh --user jhtitp
+bin/build.sh --user p5name --downloads ../p5mirror/downloads
 
 sh downloads/gen/download.sh
 
@@ -12,10 +12,10 @@ sh downloads/gen/download.sh
 sh downloads/gen/unzip.sh
 
 # limit to the 2 most recent projects
-bin/build.sh --user jhtitp --limit 2
+bin/build.sh --user p5name --limit 2
 
 # run build p5projects-index.md shell script
-bin/build-p5projects-index.sh --downloads downloads
+bin/build-p5projects-index.sh --user p5name --downloads ../p5mirror/downloads
 
 # --
 

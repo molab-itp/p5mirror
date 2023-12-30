@@ -1,8 +1,8 @@
 [
   {
-    "name": "background 0",
+    "name": "background     0",
     "_id": "NAReIkM1c",
-    "updatedAt": "2023-08-19T13:56:34.426Z",
+    "updatedAt": "2023-12-30T07:01:30.575Z",
     "files": [
       {
         "name": "root",
@@ -14,19 +14,19 @@
         ],
         "fileType": "folder",
         "_id": "64165ca48b33bf438f65639b",
-        "createdAt": "2023-08-19T13:56:34.426Z",
-        "updatedAt": "2023-08-19T13:56:34.426Z",
+        "createdAt": "2023-12-30T07:01:30.575Z",
+        "updatedAt": "2023-12-30T07:01:30.575Z",
         "id": "64165ca48b33bf438f65639b"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jhtitp/sketches/NAReIkM1c\n// background 0\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight);\n}\n\nfunction draw() {\n  background(0);\n}\n\nfunction mousePressed() {\n  ui_toggleFullScreen()\n}\n\nfunction ui_toggleFullScreen() {\n  if (!document.documentElement.requestFullscreen) {\n    console.log('NO document.documentElement.requestFullscreen');\n    return;\n  }\n  if (!document.fullscreenElement) {\n    document.documentElement.requestFullscreen();\n  } else {\n    if (document.exitFullscreen) {\n      document.exitFullscreen();\n    }\n  }\n}\n\n// https://p5js.org/reference/#/p5/fullscreen\n",
+        "content": "// https://editor.p5js.org/jhtitp/sketches/NAReIkM1c\n// background  0\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight);\n}\n\nfunction draw() {\n  background(0);\n}\n\nfunction mousePressed() {\n  ui_toggleFullScreen()\n}\n\nfunction ui_toggleFullScreen() {\n  if (!document.documentElement.requestFullscreen) {\n    console.log('NO document.documentElement.requestFullscreen');\n    return;\n  }\n  if (!document.fullscreenElement) {\n    document.documentElement.requestFullscreen();\n  } else {\n    if (document.exitFullscreen) {\n      document.exitFullscreen();\n    }\n  }\n}\n\n// https://p5js.org/reference/#/p5/fullscreen\n",
         "children": [],
         "fileType": "file",
         "_id": "64165ca48b33bf438f656398",
         "isSelectedFile": true,
-        "createdAt": "2023-08-19T13:56:34.426Z",
-        "updatedAt": "2023-08-19T13:56:34.426Z",
+        "createdAt": "2023-12-30T07:01:30.575Z",
+        "updatedAt": "2023-12-30T07:01:30.575Z",
         "id": "64165ca48b33bf438f656398"
       },
       {
@@ -35,8 +35,8 @@
         "children": [],
         "fileType": "file",
         "_id": "64165ca48b33bf438f656399",
-        "createdAt": "2023-08-19T13:56:34.426Z",
-        "updatedAt": "2023-08-19T13:56:34.426Z",
+        "createdAt": "2023-12-30T07:01:30.575Z",
+        "updatedAt": "2023-12-30T07:01:30.575Z",
         "id": "64165ca48b33bf438f656399"
       },
       {
@@ -45,8 +45,8 @@
         "children": [],
         "fileType": "file",
         "_id": "64165ca48b33bf438f65639a",
-        "createdAt": "2023-08-19T13:56:34.426Z",
-        "updatedAt": "2023-08-19T13:56:34.426Z",
+        "createdAt": "2023-12-30T07:01:30.575Z",
+        "updatedAt": "2023-12-30T07:01:30.575Z",
         "id": "64165ca48b33bf438f65639a"
       }
     ],

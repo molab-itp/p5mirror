@@ -68,7 +68,8 @@ function download_sh(sks, download_sh_path, unzip_sh_path) {
   // console.log('sks.length', sks.length);
   let download_lines = [];
   let unzip_lines = [];
-  unzip_lines.push(`cd p5projects`);
+  unzip_lines.push(`cd "${my.downloads}/../p5projects"`);
+  unzip_lines.push(`pwd`);
   let index = 0;
   sks.forEach((item) => {
     // console.log(index, 'project.name', item.project.name);
@@ -90,6 +91,17 @@ function download_sh(sks, download_sh_path, unzip_sh_path) {
   unzip_lines.push('echo');
   fs.writeFileSync(download_sh_path, download_lines.join('\n'));
   fs.writeFileSync(unzip_sh_path, unzip_lines.join('\n'));
+}
+
+function unzip_sh(unzip_lines, index, name) {
+  unzip_lines.push(`#`);
+  unzip_lines.push(`echo unzip ${index} "${name}"`);
+  // unzip_lines.push(`# ${name}`);
+  unzip_lines.push(`rm -rf "${name}"`);
+  unzip_lines.push(`mkdir "${name}"`);
+  unzip_lines.push(`cd "${name}"`);
+  unzip_lines.push(`unzip -q "../../downloads/zips/${name}"`);
+  unzip_lines.push(`cd ..`);
 }
 
 // Keep track of duplicate names to suffix with count
@@ -122,16 +134,6 @@ function fixForFileName(str) {
 // unzip "../../downloads/zips/my sketch name.zip"
 // cd ..
 //
-function unzip_sh(unzip_lines, index, name) {
-  unzip_lines.push(`#`);
-  unzip_lines.push(`echo unzip ${index} "${name}"`);
-  // unzip_lines.push(`# ${name}`);
-  unzip_lines.push(`rm -rf "${name}"`);
-  unzip_lines.push(`mkdir "${name}"`);
-  unzip_lines.push(`cd "${name}"`);
-  unzip_lines.push(`unzip -q "../../downloads/zips/${name}"`);
-  unzip_lines.push(`cd ..`);
-}
 
 function list_sketches(sks, list_path) {
   // console.log('sks', sks);
