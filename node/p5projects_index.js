@@ -44,7 +44,7 @@ function run() {
     // console.log('');
     // console.log('id', id);
     let p5js = `[p5js](https://editor.p5js.org/${my.user_name}/sketches/${id})`;
-    lines.push(`- [${mfile}](./p5projects/${efile}) ${p5js}`);
+    lines.push(`- [${mfile}](./p5projects/${efile}) \[${p5js}\]`);
   }
   console.log('');
 
