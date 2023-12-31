@@ -36,12 +36,15 @@ function run() {
     let mfile = markDownQuote(afile);
     let efile = encodeURIComponent(afile);
     // let mefile = markDownQuote(efile);
-    // console.log('afile', afile);
+    console.log('afile', afile);
     // console.log('mfile', mfile);
     // console.log('efile', efile);
     // console.log('mefile', mefile);
     // console.log('');
-    lines.push(`- [${mfile}](./p5projects/${efile})`);
+    let id = extract_id(afile);
+    console.log('id', id);
+    let p5js = `[p5js](https://editor.p5js.org/${my.user_name}/sketches/${id})`;
+    lines.push(`- [${mfile}](./p5projects/${efile}) ${p5js}`);
   }
   console.log('');
 
@@ -49,3 +52,8 @@ function run() {
 }
 
 run();
+
+function extract_id(link) {
+  // substring(indexStart, indexEnd)
+  return link.substring(link.length - 9);
+}
