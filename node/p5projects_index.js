@@ -41,7 +41,7 @@ function run() {
     // console.log('efile', efile);
     // console.log('mefile', mefile);
     // console.log('');
-    lines.push(`- [${mfile}](./p5projects/${efile}/index.html)`);
+    lines.push(`- [${mfile}](./p5projects/${efile})`);
   }
   console.log('');
 

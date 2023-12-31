@@ -48,6 +48,14 @@ sh downloads/gen/unzip.sh
 
 ```
 
+# github pages for this repo
+
+[https://molab-itp.github.io/p5mirror/](https://molab-itp.github.io/p5mirror/)
+
+# search p5mirror on github for other repos
+
+[https://github.com/search?q=p5mirror&type=repositories](https://github.com/search?q=p5mirror&type=repositories)
+
 ## Generated files
 
 - [p5projects-index](./p5projects-index.md)
@@ -67,11 +75,3 @@ sh downloads/gen/unzip.sh
 
 - [downloads/json/collections.json](./downloads/json/collections.json)
 - [downloads/json/sketches.json](./downloads/json/sketches.json)
-
-# github pages
-
-[https://molab-itp.github.io/p5mirror/](https://molab-itp.github.io/p5mirror/)
-
-# search p5mirror on github
-
-[https://github.com/search?q=p5mirror&type=repositories](https://github.com/search?q=p5mirror&type=repositories)
