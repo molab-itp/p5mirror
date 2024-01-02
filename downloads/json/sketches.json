@@ -2,7 +2,7 @@
   {
     "name": "background     0",
     "_id": "NAReIkM1c",
-    "updatedAt": "2024-01-02T07:46:28.827Z",
+    "updatedAt": "2024-01-02T07:56:39.010Z",
     "files": [
       {
         "name": "root",
@@ -16,20 +16,20 @@
         ],
         "fileType": "folder",
         "_id": "64165ca48b33bf438f65639b",
-        "createdAt": "2024-01-02T07:46:28.827Z",
-        "updatedAt": "2024-01-02T07:46:28.827Z",
+        "createdAt": "2024-01-02T07:56:39.010Z",
+        "updatedAt": "2024-01-02T07:56:39.010Z",
         "isSelectedFile": false,
         "id": "64165ca48b33bf438f65639b"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jhtitp/sketches/NAReIkM1c\n// background  0\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight);\n  createA('./README.txt', 'README.txt');\n}\n\nfunction draw() {\n  background(0);\n}\n\nfunction mousePressed() {\n  let onCanvas = mouseX >= 0 && mouseX < width && mouseY >= 0 && mouseY < height;\n  if (onCanvas) {\n    ui_toggleFullScreen()\n  }\n}\n\nfunction ui_toggleFullScreen() {\n  if (!document.documentElement.requestFullscreen) {\n    console.log('NO document.documentElement.requestFullscreen');\n    return;\n  }\n  if (!document.fullscreenElement) {\n    document.documentElement.requestFullscreen();\n  } else {\n    if (document.exitFullscreen) {\n      document.exitFullscreen();\n    }\n  }\n}\n\n// https://p5js.org/reference/#/p5/fullscreen\n",
+        "content": "// https://editor.p5js.org/p5name/sketches/NAReIkM1c\n// background  0\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight);\n  createA('./README.txt', 'README.txt');\n}\n\nfunction draw() {\n  background(0);\n}\n\nfunction mousePressed() {\n  let onCanvas = mouseX >= 0 && mouseX < width && mouseY >= 0 && mouseY < height;\n  if (onCanvas) {\n    ui_toggleFullScreen()\n  }\n}\n\nfunction ui_toggleFullScreen() {\n  if (!document.documentElement.requestFullscreen) {\n    console.log('NO document.documentElement.requestFullscreen');\n    return;\n  }\n  if (!document.fullscreenElement) {\n    document.documentElement.requestFullscreen();\n  } else {\n    if (document.exitFullscreen) {\n      document.exitFullscreen();\n    }\n  }\n}\n\n// https://p5js.org/reference/#/p5/fullscreen\n",
         "children": [],
         "fileType": "file",
         "_id": "64165ca48b33bf438f656398",
         "isSelectedFile": true,
-        "createdAt": "2024-01-02T07:46:28.827Z",
-        "updatedAt": "2024-01-02T07:46:28.827Z",
+        "createdAt": "2024-01-02T07:56:39.010Z",
+        "updatedAt": "2024-01-02T07:56:39.010Z",
         "id": "64165ca48b33bf438f656398"
       },
       {
@@ -38,8 +38,8 @@
         "children": [],
         "fileType": "file",
         "_id": "64165ca48b33bf438f656399",
-        "createdAt": "2024-01-02T07:46:28.827Z",
-        "updatedAt": "2024-01-02T07:46:28.827Z",
+        "createdAt": "2024-01-02T07:56:39.010Z",
+        "updatedAt": "2024-01-02T07:56:39.010Z",
         "isSelectedFile": false,
         "id": "64165ca48b33bf438f656399"
       },
@@ -49,8 +49,8 @@
         "children": [],
         "fileType": "file",
         "_id": "64165ca48b33bf438f65639a",
-        "createdAt": "2024-01-02T07:46:28.827Z",
-        "updatedAt": "2024-01-02T07:46:28.827Z",
+        "createdAt": "2024-01-02T07:56:39.010Z",
+        "updatedAt": "2024-01-02T07:56:39.010Z",
         "isSelectedFile": false,
         "id": "64165ca48b33bf438f65639a"
       },
@@ -61,8 +61,8 @@
         "fileType": "file",
         "_id": "6593be0f29b100001a3b1217",
         "isSelectedFile": false,
-        "updatedAt": "2024-01-02T07:46:28.827Z",
-        "createdAt": "2024-01-02T07:46:28.827Z",
+        "updatedAt": "2024-01-02T07:56:39.010Z",
+        "createdAt": "2024-01-02T07:56:39.010Z",
         "id": "6593be0f29b100001a3b1217"
       },
       {
@@ -72,8 +72,8 @@
         "fileType": "file",
         "_id": "6593be83704c98001a443954",
         "url": "https://assets.editor.p5js.org/64165ccec9dda1001a8b6295/bc378c04-91d1-4804-9501-f00d2e2842f9.png",
-        "updatedAt": "2024-01-02T07:46:28.827Z",
-        "createdAt": "2024-01-02T07:46:28.827Z",
+        "updatedAt": "2024-01-02T07:56:39.010Z",
+        "createdAt": "2024-01-02T07:56:39.010Z",
         "isSelectedFile": false,
         "id": "6593be83704c98001a443954"
       }

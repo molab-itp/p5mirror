@@ -1,9 +1,9 @@
-// https://editor.p5js.org/jhtitp/sketches/NAReIkM1c
+// https://editor.p5js.org/p5name/sketches/NAReIkM1c
 // background  0
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  createA('./README.md', 'README.md');
+  createA('./README.txt', 'README.txt');
 }
 
 function draw() {
@@ -13,7 +13,7 @@ function draw() {
 function mousePressed() {
   let onCanvas = mouseX >= 0 && mouseX < width && mouseY >= 0 && mouseY < height;
   if (onCanvas) {
-    ui_toggleFullScreen();
+    ui_toggleFullScreen()
   }
 }
 
