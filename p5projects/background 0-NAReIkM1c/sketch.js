@@ -3,6 +3,7 @@
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  createA('./README.md', 'README.md');
 }
 
 function draw() {
@@ -10,7 +11,10 @@ function draw() {
 }
 
 function mousePressed() {
-  ui_toggleFullScreen()
+  let onCanvas = mouseX >= 0 && mouseX < width && mouseY >= 0 && mouseY < height;
+  if (onCanvas) {
+    ui_toggleFullScreen();
+  }
 }
 
 function ui_toggleFullScreen() {
