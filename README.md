@@ -8,7 +8,7 @@ mirror your p5js.editor sketches into a git repo
 - How ?
   - command line scripts download your p5 sketches with associated media files
   - mark down files generated to list sketches and collections
-  - index file generated for your projects for github friendly pages
+  - index file generated for your projects for github pages
 
 ## Usage
 
