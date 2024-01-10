@@ -10,6 +10,20 @@ mirror your p5js.editor sketches into a git repo
   - mark down files generated to list sketches and collections
   - index file generated for your projects for github pages
 
+## Recommended apps
+
+- https://code.visualstudio.com/
+
+- https://desktop.github.com/
+
+### VS Code extensions
+
+- https://marketplace.visualstudio.com/items?itemName=samplavigne.p5-vscode
+
+- https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+- https://marketplace.visualstudio.com/items?itemName=Swimm.swimm
+
 ## Usage
 
 ```
@@ -22,9 +36,9 @@ mirror your p5js.editor sketches into a git repo
 # where p5name is your p5js.editor user name
 # clone it next to p5mirror
 
-# for p5mirror-p5name, add to .gitignore
-.DS_Store
-downloads/zips
+# in your preo p5mirror-p5name, add these file to .gitignore
+- .DS_Store
+- downloads/zips
 
 # your folder structure should look like this
 
