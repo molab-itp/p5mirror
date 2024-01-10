@@ -2,7 +2,7 @@
 title: p5mirror
 ---
 
-bash scripts to mirror your p5js editor projects (sketches + media)
+bash scripts to copy your p5js editor projects (sketches + media) into your repo
 
 Follow the instructions here, using a terminal app - eg. VS Code builtin terminal&nbsp;
 
@@ -12,7 +12,7 @@ Follow the instructions here, using a terminal app - eg. VS Code builtin termina
 
 ---
 
-step 1
+step 1 - clone p5mirror so you can stay up todate with changes.
 
 ```markdown
 # clone this repo as folder p5mirror
@@ -106,9 +106,15 @@ run script to create index of all your projects with link back to p5js editor
 
 </SwmSnippet>
 
+Example output:
+
+<SwmPath>[p5projects-index.md](/p5projects-index.md)</SwmPath>
+
 &nbsp;
 
-<SwmPath>[bin/build-p5projects-index.sh](/bin/build-p5projects-index.sh)</SwmPath>
+!!@ TODO: show how to use --limit to download only recently changed/added scripts. Or edit download.sh for selective download
+
+&nbsp;
 
 <SwmPath>[node/build.js](/node/build.js)</SwmPath>
 
