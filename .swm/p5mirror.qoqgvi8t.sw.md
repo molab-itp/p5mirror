@@ -50,14 +50,56 @@ step 3 - update .gitignore
 
 </SwmSnippet>
 
-<SwmSnippet path="/README.md" line="48">
+<SwmSnippet path="README.md" line="51">
 
 ---
 
-step 4 - run build.sh shell script
+step 4 - run [build.sh](http://build.sh) shell script
+
+```
+../p5mirror/bin/build.sh --user p5name
+```
+
+---
+
+</SwmSnippet>
+
+<SwmSnippet path="/README.md" line="56">
+
+---
+
+run script to download all your projects as zip files
 
 ```markdown
-# in your p5mirror-p5name folder, run p5mirror/bin/build.sh
+sh downloads/gen/download.sh
+```
+
+---
+
+</SwmSnippet>
+
+<SwmSnippet path="/README.md" line="60">
+
+---
+
+run script to unzip the downloads
+
+```markdown
+sh downloads/gen/unzip.sh
+```
+
+---
+
+</SwmSnippet>
+
+<SwmSnippet path="/README.md" line="64">
+
+---
+
+run script to create index of all your projects with link back to p5js editor
+
+```markdown
+../p5mirror/bin/build-p5projects-index.sh --user p5name
 ```
 
 ---
