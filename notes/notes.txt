@@ -13,7 +13,7 @@ sh downloads/gen/unzip.sh --downloads ../p5mirror/downloads
 
 sh downloads/gen/unzip.sh 
 
-# limit to the 2 most recent projects
+# limit to the n most recent projects
 bin/build.sh --user p5name --downloads ../p5mirror/downloads --limit 2
 bin/build.sh --user p5name --downloads ../p5mirror/downloads --limit 1
 

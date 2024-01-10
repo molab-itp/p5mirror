@@ -3,11 +3,12 @@
 mirror your p5js.editor sketches into a git repo
 
 - Where are my p5js.editor sketches and collections ?
-  - make sure that all your p5js.editor sketches are available in a git repo
+  - make sure that all your p5js.editor projects are available in a git repo
   - be prepared if p5js.editor server fails
-- Features
+- How ?
   - command line scripts download your p5 sketches with associated media files
   - mark down files generated to list sketches and collections
+  - github pages friendly index file generated for your projects
 
 ## Usage
 
@@ -17,7 +18,10 @@ mirror your p5js.editor sketches into a git repo
 
 # clone this repo as folder p5mirror
 
-# create a new repo, named it p5mirror-p5name, and clone it next to p5mirror
+# create a new repo, named it p5mirror-p5name
+# where p5name is your p5js.editor user name
+# clone it next to p5mirror
+
 # for p5mirror-p5name, add to .gitignore
 .DS_Store
 downloads/zips
