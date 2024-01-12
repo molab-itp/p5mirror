@@ -7,6 +7,7 @@ const parse_argv = require('./parse_argv');
 const { markDownQuote } = require('./markDownQuote');
 
 let my = {};
+
 parse_argv.init(my);
 
 function init() {
