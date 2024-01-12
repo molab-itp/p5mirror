@@ -108,13 +108,17 @@ run script to create index of all your projects with link back to p5js editor
 
 </SwmSnippet>
 
-Example output from build-p5projects-index.sh:
+Example output from [build-p5projects-index.sh](http://build-p5projects-index.sh):
 
 <SwmPath>[p5projects-index.md](/p5projects-index.md)</SwmPath>
 
 &nbsp;
 
-!!@ TODO: show how to use --limit to download only recently changed/added scripts. Or edit [download.sh](http://download.sh) for selective download
+!!@ TODO: doc&nbsp;
+
+- use --limit to download only recently changed/added scripts.&nbsp;
+
+- edit [download.sh](http://download.sh) for selective download
 
 &nbsp;
 
