@@ -28,11 +28,30 @@
         "id": "658df3da497403001aaad590",
         "projectId": "NAReIkM1c",
         "isDeleted": false
+      },
+      {
+        "_id": "65a08c6339c9d4001a928e6a",
+        "project": {
+          "name": "duplicate",
+          "_id": "TdzEIUUD5",
+          "user": {
+            "_id": "64165ccec9dda1001a8b6295",
+            "username": "p5name",
+            "id": "64165ccec9dda1001a8b6295"
+          },
+          "slug": "duplicate_copy",
+          "id": "TdzEIUUD5"
+        },
+        "createdAt": "2024-01-12T00:48:35.488Z",
+        "updatedAt": "2024-01-12T00:48:35.488Z",
+        "id": "65a08c6339c9d4001a928e6a",
+        "projectId": "TdzEIUUD5",
+        "isDeleted": false
       }
     ],
     "createdAt": "2023-12-28T22:16:54.518Z",
-    "updatedAt": "2023-12-28T22:16:58.767Z",
-    "__v": 1,
+    "updatedAt": "2024-01-12T00:48:35.488Z",
+    "__v": 2,
     "id": "BbYgr9US_"
   }
 ]

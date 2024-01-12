@@ -1,5 +1,14 @@
 notes.txt
 
+# --
+2024-01-11 19:53:31
+
+bin/build.sh --user p5name --downloads ../p5mirror/downloads
+
+sh downloads/gen/download.sh
+
+sh downloads/gen/unzip.sh 
+
 
 # --
 2023-12-28 14:40:24
