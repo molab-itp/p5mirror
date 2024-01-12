@@ -10,11 +10,11 @@ let my = {};
 function setup() {
 	my.shapes = []
     // https://github.com/processing/p5.js/blob/v1.9.0/src/core/environment.js#L732
-    my.width = window.innerWidth
+    // my.width = window.innerWidth
 	// my.width = windowWidth
-	my.height = windowHeight
-	// my.width = 400
-	// my.height = 800
+	// my.height = windowHeight
+	my.width = 400
+	my.height = 800
 	my.step = 50
 	my.len = 20
 	my.left = (-my.width + my.step) * 0.5

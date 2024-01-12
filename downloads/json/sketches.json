@@ -2,7 +2,7 @@
   {
     "name": "2024-01-11 #genuary11",
     "_id": "zSFx_e8ZD",
-    "updatedAt": "2024-01-12T01:04:34.259Z",
+    "updatedAt": "2024-01-12T01:19:08.100Z",
     "files": [
       {
         "name": "root",
@@ -14,19 +14,19 @@
         ],
         "fileType": "folder",
         "_id": "65a08c5258fd017af2a166d6",
-        "createdAt": "2024-01-12T01:04:34.259Z",
-        "updatedAt": "2024-01-12T01:04:34.259Z",
+        "createdAt": "2024-01-12T01:19:08.100Z",
+        "updatedAt": "2024-01-12T01:19:08.100Z",
         "id": "65a08c5258fd017af2a166d6"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/p5name/sketches/zSFx_e8ZD\n// 2024-01-11 #genuary11\n// https://openprocessing.org/sketch/2142252\n// random grid of shapes - rects and triangles\n// mouse press to start/stop rotation\n// shift + mouse press for new grid\n\nlet my = {};\n\nfunction setup() {\n\tmy.shapes = []\n    // https://github.com/processing/p5.js/blob/v1.9.0/src/core/environment.js#L732\n    my.width = window.innerWidth\n\t// my.width = windowWidth\n\tmy.height = windowHeight\n\t// my.width = 400\n\t// my.height = 800\n\tmy.step = 50\n\tmy.len = 20\n\tmy.left = (-my.width + my.step) * 0.5\n\tmy.right = my.width * 0.5\n\tmy.top = (-my.height + my.step) * 0.5;\n\tmy.bottom = my.height * 0.5\n\tmy.rotate = 0;\n\tmy.scale = 0;\n\tcreateCanvas(my.width, my.height, WEBGL);\n\tbackground(0)\n\tinit_shapes()\n\t// createDiv('press mouse for new grid')\n}\n\nfunction draw() {\n\tbackground(50);\n\tortho()\n\tambientLight(255); // Set the ambient light intensity to 255 (white light)\n\tnoStroke()\n\tmy.shapes.forEach(shape => {\n\t\tshape.show()\n\t})\n}\n\nfunction mousePressed() {\n\t// my.rotate = !my.rotate\n\tconsole.log('mousePressed my.rotate=' + my.rotate)\n\tif (keyIsDown(SHIFT)) {\n\t\tinit_shapes()\n\t} else {\n\t\tmy.shapes.forEach(shape => {\n\t\t\tshape.rotate = !shape.rotate\n\t\t})\n\t}\n}\n\nfunction init_shapes() {\n\tmy.shapes = [];\n\tfor (let x = my.left; x < my.right; x += my.step) {\n\t\tfor (let y = my.top; y <= my.bottom; y += my.step) {\n\t\t\tmy.shapes.push(new Shape(random(1000), x, y))\n\t\t}\n\t} {\n\t\tlet shape = random(my.shapes)\n\t\tshape.isTriangle = 1\n\t} {\n\t\tlet shape = random(my.shapes)\n\t\tshape.isHidden = 1\n\t}\n\n\tconsole.log('init_shapes n shapes ' + my.shapes.length)\n}\n\nclass Shape {\n\tconstructor(rid, x, y) {\n\t\t// console.log('shape rid x y', rid, x, y)\n\t\tthis.rid = rid\n\t\tthis.x = x\n\t\tthis.y = y\n\t\t// this.isTriangle = random() > 0.99\n\t\t// this.offset = random() > 0.3\n\t\tthis.offset = 0\n\t\tthis.offsetX = random([-my.len, -20, 0, 20, 30])\n\t\tthis.offsetY = random([-30, -20, 0, 20, 30])\n\t\tthis.scale = my.scale;\n\t\tthis.scaleX = random([-1.5, -1.2, -1, 0.8, 1, 1.2, 1.5])\n\t\tthis.scaleY = random([-1.4, -1.2, -1, 0.8, 1, 1.2, 1.4])\n\t\tthis.ry = random([1, 2])\n\t\tthis.rz = random([0, PI])\n\t\tthis.clr = random_color()\n\t\tthis.rotate = my.rotate;\n\t\tthis.angleZ = 0;\n\t\t// this.angleZ = this.rid;\n\t}\n\tshow() {\n\t\tif (this.isHidden) return;\n\t\tpush()\n\t\ttranslate(this.x, this.y)\n\t\tif (this.offset) translate(this.offsetX, this.offsetY)\n\t\tif (this.scale) scale(this.scaleX, this.scaleY)\n\t\tif (this.rotate) this.angleZ += 0.01;\n\t\trotateZ(this.angleZ);\n\t\t// rotateZ((this.rid + this.frameCount) * 0.01);\n\t\tfill(color(this.clr))\n\t\tbeginShape();\n\t\tvertex(-my.len, -my.len, 0);\n\t\tvertex(my.len, -my.len, 0);\n\t\tvertex(my.len, my.len, 0);\n\t\tif (!this.isTriangle) vertex(-my.len, my.len, 0);\n\t\tendShape(CLOSE);\n\t\tpop()\n\t}\n}\n\nfunction random_color() {\n\t// return random(\"3772ff-df2935-fdca40\".split(\"-\").map(a => \"#\" + a));\n\treturn random(\"ff0000-00ff00-ffff00\".split(\"-\").map(a => \"#\" + a));\n}\n\n// https://openprocessing.org/sketch/2142138\n\n// https://openprocessing.org/sketch/2142065\n// https://twitter.com/search?q=%23genuary11&src=typeahead_click\n\n// In the style of Anni Albers (1899-1994)",
+        "content": "// https://editor.p5js.org/p5name/sketches/zSFx_e8ZD\n// 2024-01-11 #genuary11\n// https://openprocessing.org/sketch/2142252\n// random grid of shapes - rects and triangles\n// mouse press to start/stop rotation\n// shift + mouse press for new grid\n\nlet my = {};\n\nfunction setup() {\n\tmy.shapes = []\n    // https://github.com/processing/p5.js/blob/v1.9.0/src/core/environment.js#L732\n    // my.width = window.innerWidth\n\t// my.width = windowWidth\n\t// my.height = windowHeight\n\tmy.width = 400\n\tmy.height = 800\n\tmy.step = 50\n\tmy.len = 20\n\tmy.left = (-my.width + my.step) * 0.5\n\tmy.right = my.width * 0.5\n\tmy.top = (-my.height + my.step) * 0.5;\n\tmy.bottom = my.height * 0.5\n\tmy.rotate = 0;\n\tmy.scale = 0;\n\tcreateCanvas(my.width, my.height, WEBGL);\n\tbackground(0)\n\tinit_shapes()\n\t// createDiv('press mouse for new grid')\n}\n\nfunction draw() {\n\tbackground(50);\n\tortho()\n\tambientLight(255); // Set the ambient light intensity to 255 (white light)\n\tnoStroke()\n\tmy.shapes.forEach(shape => {\n\t\tshape.show()\n\t})\n}\n\nfunction mousePressed() {\n\t// my.rotate = !my.rotate\n\tconsole.log('mousePressed my.rotate=' + my.rotate)\n\tif (keyIsDown(SHIFT)) {\n\t\tinit_shapes()\n\t} else {\n\t\tmy.shapes.forEach(shape => {\n\t\t\tshape.rotate = !shape.rotate\n\t\t})\n\t}\n}\n\nfunction init_shapes() {\n\tmy.shapes = [];\n\tfor (let x = my.left; x < my.right; x += my.step) {\n\t\tfor (let y = my.top; y <= my.bottom; y += my.step) {\n\t\t\tmy.shapes.push(new Shape(random(1000), x, y))\n\t\t}\n\t} {\n\t\tlet shape = random(my.shapes)\n\t\tshape.isTriangle = 1\n\t} {\n\t\tlet shape = random(my.shapes)\n\t\tshape.isHidden = 1\n\t}\n\n\tconsole.log('init_shapes n shapes ' + my.shapes.length)\n}\n\nclass Shape {\n\tconstructor(rid, x, y) {\n\t\t// console.log('shape rid x y', rid, x, y)\n\t\tthis.rid = rid\n\t\tthis.x = x\n\t\tthis.y = y\n\t\t// this.isTriangle = random() > 0.99\n\t\t// this.offset = random() > 0.3\n\t\tthis.offset = 0\n\t\tthis.offsetX = random([-my.len, -20, 0, 20, 30])\n\t\tthis.offsetY = random([-30, -20, 0, 20, 30])\n\t\tthis.scale = my.scale;\n\t\tthis.scaleX = random([-1.5, -1.2, -1, 0.8, 1, 1.2, 1.5])\n\t\tthis.scaleY = random([-1.4, -1.2, -1, 0.8, 1, 1.2, 1.4])\n\t\tthis.ry = random([1, 2])\n\t\tthis.rz = random([0, PI])\n\t\tthis.clr = random_color()\n\t\tthis.rotate = my.rotate;\n\t\tthis.angleZ = 0;\n\t\t// this.angleZ = this.rid;\n\t}\n\tshow() {\n\t\tif (this.isHidden) return;\n\t\tpush()\n\t\ttranslate(this.x, this.y)\n\t\tif (this.offset) translate(this.offsetX, this.offsetY)\n\t\tif (this.scale) scale(this.scaleX, this.scaleY)\n\t\tif (this.rotate) this.angleZ += 0.01;\n\t\trotateZ(this.angleZ);\n\t\t// rotateZ((this.rid + this.frameCount) * 0.01);\n\t\tfill(color(this.clr))\n\t\tbeginShape();\n\t\tvertex(-my.len, -my.len, 0);\n\t\tvertex(my.len, -my.len, 0);\n\t\tvertex(my.len, my.len, 0);\n\t\tif (!this.isTriangle) vertex(-my.len, my.len, 0);\n\t\tendShape(CLOSE);\n\t\tpop()\n\t}\n}\n\nfunction random_color() {\n\t// return random(\"3772ff-df2935-fdca40\".split(\"-\").map(a => \"#\" + a));\n\treturn random(\"ff0000-00ff00-ffff00\".split(\"-\").map(a => \"#\" + a));\n}\n\n// https://openprocessing.org/sketch/2142138\n\n// https://openprocessing.org/sketch/2142065\n// https://twitter.com/search?q=%23genuary11&src=typeahead_click\n\n// In the style of Anni Albers (1899-1994)",
         "children": [],
         "fileType": "file",
         "_id": "65a08c5258fd017af2a166d3",
         "isSelectedFile": true,
-        "createdAt": "2024-01-12T01:04:34.259Z",
-        "updatedAt": "2024-01-12T01:04:34.259Z",
+        "createdAt": "2024-01-12T01:19:08.100Z",
+        "updatedAt": "2024-01-12T01:19:08.100Z",
         "id": "65a08c5258fd017af2a166d3"
       },
       {
@@ -35,8 +35,8 @@
         "children": [],
         "fileType": "file",
         "_id": "65a08c5258fd017af2a166d4",
-        "createdAt": "2024-01-12T01:04:34.259Z",
-        "updatedAt": "2024-01-12T01:04:34.259Z",
+        "createdAt": "2024-01-12T01:19:08.100Z",
+        "updatedAt": "2024-01-12T01:19:08.100Z",
         "id": "65a08c5258fd017af2a166d4"
       },
       {
@@ -45,8 +45,8 @@
         "children": [],
         "fileType": "file",
         "_id": "65a08c5258fd017af2a166d5",
-        "createdAt": "2024-01-12T01:04:34.259Z",
-        "updatedAt": "2024-01-12T01:04:34.259Z",
+        "createdAt": "2024-01-12T01:19:08.100Z",
+        "updatedAt": "2024-01-12T01:19:08.100Z",
         "id": "65a08c5258fd017af2a166d5"
       }
     ],
