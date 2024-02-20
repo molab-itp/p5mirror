@@ -365,5 +365,119 @@
     "createdAt": "2023-12-28T23:25:12.373Z",
     "updatedAt": "2023-12-28T23:30:12.432Z",
     "id": "3K6pk1kI6"
+  },
+  {
+    "name": "ims black-n white-1 copy",
+    "_id": "OX8NM-0MQ",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "65b3266f49eba189599ef512",
+          "65b3266f49eba189599ef513",
+          "65b3266f49eba189599ef514"
+        ],
+        "fileType": "folder",
+        "_id": "65b3266f49eba189599ef511",
+        "createdAt": "2024-01-26T03:23:19.844Z",
+        "updatedAt": "2024-01-26T03:23:19.844Z",
+        "isSelectedFile": false,
+        "id": "65b3266f49eba189599ef511"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/8Iazn1D_P\n// ims black-n white-1\n\nlet xpos = 0;\nlet ypos = 0;\nlet xlen;\nlet ylen;\nlet debug = 1;\nlet dim = { width: 400, height: 400 };\nlet fullScreenBtn;\nlet startTime;\nlet changeTime = 30.0;\n\nfunction setup() {\n  if (!debug) {\n    dim.width = windowWidth;\n    dim.height = windowHeight;\n  }\n  createCanvas(dim.width, dim.height);\n  noStroke();\n\n  fullScreenBtn = createButton(\"Full Screen\")\n  fullScreenBtn.mousePressed(full_screen_action);\n  fullScreenBtn.style(\"font-size:42px\");\n\n  startTime = millis() / 1000.0;\n  \n  new_pos();\n\n  init_dim();\n}\n\nfunction draw() {\n  background(0);\n  // strokeWeight(0);\n  // fill(\"black\");\n  // rect(0, 0, width, height);\n\n  strokeWeight(1);\n  stroke(255);\n  // point(xpos, ypos);\n  line(0, ypos, width, ypos);\n  line(xpos, 0, xpos, height);\n  \n  let now = millis() / 1000;\n  if (now - startTime > changeTime) {\n    startTime = now;\n    new_pos();\n  }\n}\n\nfunction new_pos() {\n  xpos = random(0, width);\n  ypos = random(0, height);\n}\n\nfunction init_dim() {\n  xlen = width / 3;\n  ylen = height;\n}\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\nfunction full_screen_action() {\n  ui_remove_all();\n  ui_toggleFullScreen();\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  init_dim();\n}\n\nfunction ui_remove_all() {\n  fullScreenBtn.remove();\n}\n\nfunction ui_toggleFullScreen() {\n  fullscreen(1);\n  // if (!document.documentElement.requestFullscreen) {\n  //   console.log(\"NO document.documentElement.requestFullscreen\");\n  //   return;\n  // }\n  // if (!document.fullscreenElement) {\n  //   document.documentElement.requestFullscreen();\n  // } else {\n  //   if (document.exitFullscreen) {\n  //     document.exitFullscreen();\n  //   }\n  // }\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65b3266f49eba189599ef513",
+        "isSelectedFile": true,
+        "createdAt": "2024-01-26T03:23:19.844Z",
+        "updatedAt": "2024-01-26T03:23:19.844Z",
+        "id": "65b3266f49eba189599ef513"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65b3266f49eba189599ef512",
+        "createdAt": "2024-01-26T03:23:19.844Z",
+        "updatedAt": "2024-01-26T03:23:19.844Z",
+        "isSelectedFile": false,
+        "id": "65b3266f49eba189599ef512"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65b3266f49eba189599ef514",
+        "createdAt": "2024-01-26T03:23:19.844Z",
+        "updatedAt": "2024-01-26T03:23:19.844Z",
+        "isSelectedFile": false,
+        "id": "65b3266f49eba189599ef514"
+      }
+    ],
+    "createdAt": "2024-01-26T03:26:39.630Z",
+    "updatedAt": "2024-01-26T03:26:39.630Z",
+    "id": "OX8NM-0MQ"
+  },
+  {
+    "name": "ims black-n white-1 copy",
+    "_id": "nvk_blNlZ",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "65b2d560219d2961a8200cb9",
+          "65b2d560219d2961a8200cba",
+          "65b2d560219d2961a8200cbb"
+        ],
+        "fileType": "folder",
+        "_id": "65b2d560219d2961a8200cb8",
+        "createdAt": "2024-01-25T21:39:40.545Z",
+        "updatedAt": "2024-01-25T21:39:40.545Z",
+        "isSelectedFile": false,
+        "id": "65b2d560219d2961a8200cb8"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/8Iazn1D_P\n// ims black-n white-1\n\nlet xpos = 0;\nlet ypos = 0;\nlet xlen;\nlet ylen;\nlet debug = 1;\nlet dim = { width: 400, height: 400 };\nlet fullScreenBtn;\n\nfunction setup() {\n  if (!debug) {\n    dim.width = windowWidth;\n    dim.height = windowHeight;\n  }\n  createCanvas(dim.width, dim.height);\n  noStroke();\n\n  fullScreenBtn = createButton(\"Full Screen\").mousePressed(full_screen_action);\n  fullScreenBtn.style(\"font-size:42px\");\n\n  init_dim();\n}\n\nfunction draw() {\n  // background(220);\n  fill(\"black\");\n  rect(0,0,width,height)\n  strokeWeight(1)\n  stroke(255)\n  // xpos = random(0,width)\n  // ypos = random(0,height)\n  point(xpos,ypos);\n//   rect(0, 0, xpos, ylen);\n//   fill(\"red\");\n//   rect(xpos % width, 0, xlen, ylen);\n//   fill(\"green\");\n//   rect((xpos + xlen) % width, 0, xlen, ylen);\n//   fill(\"yellow\");\n//   rect((xpos + xlen + xlen) % width, 0, xlen, ylen);\n\n//   xpos = (xpos + 1) % width;\n}\n\nfunction init_dim() {\n  xlen = width / 3;\n  ylen = height;\n}\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\nfunction full_screen_action() {\n  ui_remove_all();\n  ui_toggleFullScreen();\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  init_dim();\n}\n\nfunction ui_remove_all() {\n  fullScreenBtn.remove();\n}\n\nfunction ui_toggleFullScreen() {\n  fullscreen(1);\n  // if (!document.documentElement.requestFullscreen) {\n  //   console.log(\"NO document.documentElement.requestFullscreen\");\n  //   return;\n  // }\n  // if (!document.fullscreenElement) {\n  //   document.documentElement.requestFullscreen();\n  // } else {\n  //   if (document.exitFullscreen) {\n  //     document.exitFullscreen();\n  //   }\n  // }\n}\n\n\n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65b2d560219d2961a8200cba",
+        "isSelectedFile": true,
+        "createdAt": "2024-01-25T21:39:40.545Z",
+        "updatedAt": "2024-01-25T21:39:40.545Z",
+        "id": "65b2d560219d2961a8200cba"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65b2d560219d2961a8200cb9",
+        "createdAt": "2024-01-25T21:39:40.545Z",
+        "updatedAt": "2024-01-25T21:39:40.545Z",
+        "isSelectedFile": false,
+        "id": "65b2d560219d2961a8200cb9"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65b2d560219d2961a8200cbb",
+        "createdAt": "2024-01-25T21:39:40.545Z",
+        "updatedAt": "2024-01-25T21:39:40.545Z",
+        "isSelectedFile": false,
+        "id": "65b2d560219d2961a8200cbb"
+      }
+    ],
+    "createdAt": "2024-01-25T21:40:48.324Z",
+    "updatedAt": "2024-01-25T21:40:48.324Z",
+    "id": "nvk_blNlZ"
   }
 ]
