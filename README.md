@@ -1,5 +1,15 @@
 # [p5mirror](https://github.com/molab-itp/p5mirror)
 
+replace your-github in this link
+
+- [github pages p5projects-index](https://your-github.github.io/p5mirror-your-github/p5projects-index.html)
+
+```
+bin/mirror.sh --user p5name
+```
+
+## Notes
+
 mirror your editor.p5js sketches into a git repo
 
 - Where are my editor.p5js sketches and collections ?
@@ -40,18 +50,12 @@ bin/mirror.sh --user p5name
 
 ```
 
-## details
+## mirror script details
 
 - See bin/mirror.sh for details steps
 - These steps can be run independantly
 
-# github pages for this repo
-
-[https://molab-itp.github.io/p5mirror/](https://molab-itp.github.io/p5mirror/)
-
-- replace with you repo github.io address
-
-# search p5mirror on github for other repos
+## search p5mirror on github for other repos
 
 [https://github.com/search?q=p5mirror&type=repositories](https://github.com/search?q=p5mirror&type=repositories)
 
