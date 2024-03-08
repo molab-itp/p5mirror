@@ -1,14 +1,17 @@
 #!/bin/bash
 cd ${0%/*}
+cd ..
 
-# Install npm if needed for node build scripts
-#
-dest=../node
-if [ ! -e "$dest/node_modules" ]; then
-  pushd $dest > /dev/null
-  npm install
-  popd > /dev/null
+# check for destination p5mirrorLib
+dest=p5mirrorLib
+if [ ! -e "$dest" ]; then
+  git clone  --depth 1 https://github.com/molab-itp/$dest.git $dest
+fi
+if [ ! -e "$dest" ]; then
+  echo "fail to clone to $dest"
+  exit
 fi
 
-node ../node/build.js "$@"
+p5mirrorLib/bin/build.sh  "$@"
+
 
