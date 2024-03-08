@@ -36,7 +36,7 @@ mirror your editor.p5js sketches into a git repo
 # download p5js scripts for a user account
 #   and create markdown listing files
 
-bin/mirror.sh --username p5name
+bin/mirror.sh --user p5name
 
 ```
 
@@ -48,6 +48,8 @@ bin/mirror.sh --username p5name
 # github pages for this repo
 
 [https://molab-itp.github.io/p5mirror/](https://molab-itp.github.io/p5mirror/)
+
+- replace with you repo github.io address
 
 # search p5mirror on github for other repos
 
