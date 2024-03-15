@@ -26,6 +26,8 @@ mirror your editor.p5js sketches into a git repo
 
 - https://desktop.github.com/
 
+- https://nodejs.org/en/download
+
 ### VS Code extensions
 
 - https://marketplace.visualstudio.com/items?itemName=samplavigne.p5-vscode
