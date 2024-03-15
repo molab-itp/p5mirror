@@ -1,14 +1,27 @@
 # [p5mirror](https://github.com/molab-itp/p5mirror)
 
+## How - Quick start
+
+```
+# Terminal commands to get started
+
+# Install nodejs
+open https://nodejs.org/en/download
+
+# In a forked clone of this repo
+# run this bash script in the root of your repo
+# replace p5name with your editor.p5js user name
+
+bin/mirror.sh --user p5name
+```
+
+## github pages setup
+
 replace your-github in this link
 
 - [github pages p5projects-index](https://your-github.github.io/p5mirror-your-github/p5projects-index.html)
 
-```
-bin/mirror.sh --user p5name
-```
-
-## Notes
+## Why?
 
 mirror your editor.p5js sketches into a git repo
 
@@ -20,13 +33,16 @@ mirror your editor.p5js sketches into a git repo
   - mark down files generated to list sketches and collections
   - index file generated for your projects for github pages
 
+## Required apps
+
+- https://nodejs.org/en/download
+
 ## Recommended apps
 
 - https://code.visualstudio.com/
 
 - https://desktop.github.com/
 
-- https://nodejs.org/en/download
 
 ### VS Code extensions
 
