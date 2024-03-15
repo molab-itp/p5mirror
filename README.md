@@ -34,7 +34,7 @@ mirror your editor.p5js sketches into a git repo
 
 - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
-- https://marketplace.visualstudio.com/items?itemName=Swimm.swimm
+<!-- - https://marketplace.visualstudio.com/items?itemName=Swimm.swimm -->
 
 ## Usage
 
