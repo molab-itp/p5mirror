@@ -8,9 +8,9 @@
 # Install nodejs
 open https://nodejs.org/en/download
 
-# In a forked clone of this repo
+# Fork this repo and name it p5mirror-p5name
+# where p5name is our editor.p5js user name
 # run this bash script in the root of your repo
-# replace p5name with your editor.p5js user name
 
 bin/mirror.sh --user p5name
 ```
@@ -42,7 +42,6 @@ mirror your editor.p5js sketches into a git repo
 - https://code.visualstudio.com/
 
 - https://desktop.github.com/
-
 
 ### VS Code extensions
 
