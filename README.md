@@ -1,6 +1,6 @@
 # [p5mirror](https://github.com/molab-itp/p5mirror)
 
-## How - Quick start
+## How ? Quick start
 
 ```
 # Terminal commands to get started
@@ -15,13 +15,7 @@ open https://nodejs.org/en/download
 bin/mirror.sh --user p5name
 ```
 
-## github pages setup
-
-replace your-github in this link
-
-- [github pages p5projects-index](https://your-github.github.io/p5mirror-your-github/p5projects-index.html)
-
-## Why?
+## Why ?
 
 mirror your editor.p5js sketches into a git repo
 
@@ -32,6 +26,12 @@ mirror your editor.p5js sketches into a git repo
   - command line scripts download your p5 sketches with associated media files
   - mark down files generated to list sketches and collections
   - index file generated for your projects for github pages
+
+## github pages setup
+
+replace your-github in this link
+
+- [github pages p5projects-index](https://your-github.github.io/p5mirror-your-github/p5projects-index.html)
 
 ## Required apps
 
