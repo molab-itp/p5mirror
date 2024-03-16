@@ -76,11 +76,15 @@ bin/mirror.sh --user p5name
 
 [https://github.com/search?q=p5mirror&type=repositories](https://github.com/search?q=p5mirror&type=repositories)
 
-## Generated files
+## Listing of editor.p5js projects
+
+Generated listing of editor.p5js projects
 
 - [p5projects-index](./p5projects-index.md)
 
-### Listings
+## Generated files
+
+All generated files are stored in the downloads directory
 
 - [downloads/gen/sketches_recent.md](./downloads/gen/sketches_recent.md)
 - [downloads/gen/sketches.md](./downloads/gen/sketches.md)
