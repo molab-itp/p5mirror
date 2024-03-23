@@ -65,6 +65,15 @@ replace your-github in this link
 
 bin/mirror.sh --user p5name
 
+# init incremental update
+#
+bin/build.sh --user p5name --check
+
+# incremental update
+# only projects updated since last update are downloaded
+#
+bin/mirror.sh --user p5name --update
+
 ```
 
 ## mirror script details
