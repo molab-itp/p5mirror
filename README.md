@@ -27,11 +27,18 @@ mirror your editor.p5js sketches into a git repo
   - mark down files generated to list sketches and collections
   - index file generated for your projects for github pages
 
-## github pages setup
+## Listing of editor.p5js projects
+
+Generated listing of editor.p5js projects
+
+- [p5projects-index](./p5projects-index.md)
+
+<!-- ## github pages setup
 
 replace your-github in this link
 
 - [github pages p5projects-index](https://your-github.github.io/p5mirror-your-github/p5projects-index.html)
+ -->
 
 ## Required apps
 
@@ -83,12 +90,6 @@ bin/mirror.sh --user p5name --verbose
 ## search p5mirror on github for other repos
 
 [https://github.com/search?q=p5mirror&type=repositories](https://github.com/search?q=p5mirror&type=repositories)
-
-## Listing of editor.p5js projects
-
-Generated listing of editor.p5js projects
-
-- [p5projects-index](./p5projects-index.md)
 
 ## Generated files
 
