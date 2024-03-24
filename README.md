@@ -62,17 +62,18 @@ replace your-github in this link
 # in p5mirror-p5name folder, run bin/mirror.sh to
 # download p5js scripts for a user account
 #   and create markdown listing files
-
+#   only projects updated since last mirror are downloaded
+#
 bin/mirror.sh --user p5name
 
-# init incremental update
+# full update, download all projects
 #
-bin/build.sh --user p5name --check
+bin/mirror.sh --user p5name --full
 
-# incremental update
-# only projects updated since last update are downloaded
+# run in verbose mode to show details of steps for debugging
 #
-bin/mirror.sh --user p5name --update
+bin/mirror.sh --user p5name --verbose
+
 
 ```
 
