@@ -49,8 +49,6 @@ replace your-github in this link
 
 - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
-<!-- - https://marketplace.visualstudio.com/items?itemName=Swimm.swimm -->
-
 ## Usage
 
 ```
