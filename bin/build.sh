@@ -11,6 +11,12 @@ if [ ! -e "$dest" ]; then
   echo "fail to clone to $dest"
   exit
 fi
+# Bring p5mirrorLib up to date
+pushd "$dest" > /dev/null
+git pull --quiet
+# git pull 
+# git status
+popd > /dev/null
 
 p5mirrorLib/bin/build.sh  "$@"
 
