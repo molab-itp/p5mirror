@@ -33,12 +33,9 @@ Generated listing of editor.p5js projects
 
 - [p5projects-index](./p5projects-index.md)
 
-<!-- ## github pages setup
+## p5mirror/forks
 
-replace your-github in this link
-
-- [github pages p5projects-index](https://your-github.github.io/p5mirror-your-github/p5projects-index.html)
- -->
+[p5mirror/forks](https://github.com/molab-itp/p5mirror/forks?include=active%2Cnetwork&page=1&period=2y&sort_by=last_updated)
 
 ## Required apps
 
@@ -87,10 +84,6 @@ bin/mirror.sh --user p5name --verbose
 - See bin/mirror.sh for details steps
 - These steps can be run independantly
 
-## search p5mirror on github for other repos
-
-[https://github.com/search?q=p5mirror&type=repositories](https://github.com/search?q=p5mirror&type=repositories)
-
 ## Generated files
 
 All generated files are stored in the downloads directory
@@ -108,3 +101,13 @@ All generated files are stored in the downloads directory
 
 - [downloads/json/collections.json](./downloads/json/collections.json)
 - [downloads/json/sketches.json](./downloads/json/sketches.json)
+
+<!-- ## search p5mirror on github for other repos -->
+<!-- [https://github.com/search?q=p5mirror&type=repositories](https://github.com/search?q=p5mirror&type=repositories) -->
+
+<!-- ## github pages setup
+
+replace your-github in this link
+
+- [github pages p5projects-index](https://your-github.github.io/p5mirror-your-github/p5projects-index.html)
+ -->
