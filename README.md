@@ -18,6 +18,14 @@ bin/mirror.sh --user p5name
 
 ```
 
+## Your mirror here
+
+```
+# Edit this line for your editor.p5js user name
+bin/mirror.sh --user p5name
+
+```
+
 ## Why ?
 
 mirror your editor.p5js sketches into a git repo
