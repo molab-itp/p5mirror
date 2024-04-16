@@ -52,13 +52,20 @@ Generated listing of editor.p5js projects
 
 - https://nodejs.org/en/download
 
+### For Microsoft Windows OS
+
+- these scripts require bash shell
+- test on macos
+- for Windows try:
+  - [how-do-i-use-bash-on-windows](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal)
+
 ## Recommended apps
 
 - https://code.visualstudio.com/
 
 - https://desktop.github.com/
 
-### VS Code extensions
+## VS Code extensions
 
 - https://marketplace.visualstudio.com/items?itemName=samplavigne.p5-vscode
 
