@@ -71,6 +71,14 @@ Generated listing of editor.p5js projects
 
 - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
+## p5mirrorLib
+
+- p5mirrorLib repo is used instally by this repo
+
+- [github p5mirrorLib](https://github.com/molab-itp/p5mirrorLib.git)
+
+- Use p5mirrorLib repo directly to keep your sketches in sync with your editor.p5js account.
+
 ## Usage
 
 ```
