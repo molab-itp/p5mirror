@@ -19,18 +19,13 @@ bin/mirror.sh --user p5name
 
 # and then commit changes in github desktop
 
-# other uses:
-#
 # remove sketches not present online
-#
 bin/mirror.sh --user p5name --clean
 
 # full update, download all projects
-#
 bin/mirror.sh --user p5name --full
 
 # run in verbose mode to show details of steps for debugging
-#
 bin/mirror.sh --user p5name --verbose
 
 ```
@@ -64,6 +59,10 @@ mirror your editor.p5js sketches into a git repo
 Generated listing of editor.p5js projects
 
 - [p5projects-index](./p5projects-index.md)
+
+- [downloads/gen/sketches_recent.md](./downloads/gen/sketches_recent.md)
+- [downloads/gen/sketches.md](./downloads/gen/sketches.md)
+- [downloads/gen/collections.md](./downloads/gen/collections.md)
 
 ## p5mirror/forks
 
@@ -135,12 +134,6 @@ bin/mirror.sh --user p5name --clean
 - These steps can be run independantly
 
 ## Generated files
-
-All generated files are stored in the downloads directory
-
-- [downloads/gen/sketches_recent.md](./downloads/gen/sketches_recent.md)
-- [downloads/gen/sketches.md](./downloads/gen/sketches.md)
-- [downloads/gen/collections.md](./downloads/gen/collections.md)
 
 ### Shell scripts to download and unzip
 
