@@ -19,6 +19,14 @@ bin/mirror.sh --user p5name
 
 # and then commit changes in github desktop
 
+# keep p5js editor changes in sync by running the command again
+# editte scripts will be downloaded
+
+```
+
+## Details
+
+```
 # remove sketches not present online
 bin/mirror.sh --user p5name --clean
 
@@ -34,12 +42,12 @@ bin/mirror.sh --user p5name --verbose
 
 ```
 # Edit this line for your editor.p5js user name
+
 bin/mirror.sh --user p5name
 
 bin/mirror.sh --user p5name --clean
 bin/mirror.sh --user p5name --full
 bin/mirror.sh --user p5name --verbose
-
 ```
 
 ## Why ?
@@ -66,7 +74,7 @@ Generated listing of editor.p5js projects
 
 ## p5mirror/forks
 
-[p5mirror/forks](https://github.com/molab-itp/p5mirror/forks?include=active%2Cnetwork&page=1&period=2y&sort_by=last_updated)
+[p5mirror/forks](https://github.com/molab-itp/p5mirror/forks?include=active%2Cnetwork&page=1&period=&sort_by=last_updated)
 
 ## Required apps
 
@@ -75,9 +83,19 @@ Generated listing of editor.p5js projects
 ### For Microsoft Windows OS
 
 - these scripts require bash shell
-- test on macos
-- for Windows try:
-  - [how-do-i-use-bash-on-windows](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal)
+- steps to enable bash on Windows OS
+
+- Install Git from https://git-scm.com/download/win
+
+- Open VS Code (or quit an open again)
+
+- Open the command palette using Ctrl + Shift + P.
+
+- Type - Select Default Profile
+
+- Select Git Bash from the options
+
+- source [how-do-i-use-bash-on-windows](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal)
 
 ## Recommended apps
 
@@ -108,22 +126,33 @@ Generated listing of editor.p5js projects
 # fork this repo and name it p5mirror-p5name
 
 # in p5mirror-p5name folder, run bin/mirror.sh to
+
 # download p5js scripts for a user account
-#   and create markdown listing files
-#   only projects updated since last mirror are downloaded
+
+# and create markdown listing files
+
+# only projects updated since last mirror are downloaded
+
 #
+
 bin/mirror.sh --user p5name
 
 # full update, download all projects
+
 #
+
 bin/mirror.sh --user p5name --full
 
 # run in verbose mode to show details of steps for debugging
+
 #
+
 bin/mirror.sh --user p5name --verbose
 
 # remove sketches not present online
+
 #
+
 bin/mirror.sh --user p5name --clean
 
 ```
@@ -154,3 +183,7 @@ replace your-github in this link
 
 - [github pages p5projects-index](https://your-github.github.io/p5mirror-your-github/p5projects-index.html)
  -->
+
+```
+
+```
